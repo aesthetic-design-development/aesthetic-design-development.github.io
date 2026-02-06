@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { About } from './components/About';
+import { Team } from './components/Team';
 import { ProjectSection } from './components/ProjectSection';
 import { Services } from './components/Services';
 import { Contact } from './components/Contact';
@@ -40,12 +42,22 @@ const App: React.FC = () => {
           <Hero />
         </section>
 
+        <section id="about" className="py-24">
+          <About />
+        </section>
+
+        
+
+        <section id="services" className="py-24">
+          <Services />
+        </section>
+
         <section id="projects" className="py-24 bg-slate-900/50">
           <ProjectSection />
         </section>
 
-        <section id="services" className="py-24">
-          <Services />
+        <section id="team" className="py-24 bg-slate-900/20">
+          <Team />
         </section>
 
         <section id="contact" className="py-24 bg-slate-900/50">

@@ -22,11 +22,9 @@ export const Header: React.FC<HeaderProps> = ({ activeSection }) => {
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-amber-500 flex items-center justify-center font-serif text-slate-950 text-xl font-bold">
-            {CONTACT_CONFIG.initial}
-          </div>
+          <img src="/assets/Companylogo.png" alt={`${CONTACT_CONFIG.name} logo`} className="w-10 h-10 object-contain" />
           <div className="flex flex-col">
-            <span className="text-lg font-bold tracking-tight text-white uppercase leading-none">{CONTACT_CONFIG.name}</span>
+            <span className="text-lg font-bold tracking-tight text-amber-500 uppercase leading-none">{CONTACT_CONFIG.name}</span>
             <span className="text-[10px] uppercase tracking-[0.2em] text-amber-500">Engineering</span>
           </div>
         </div>

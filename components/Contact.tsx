@@ -67,6 +67,17 @@ export const Contact: React.FC = () => {
             </div>
             <div className="flex items-center gap-6 group">
               <div className="w-14 h-14 glass border border-white/10 flex items-center justify-center rounded-xl text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500 shadow-xl shadow-amber-500/5">
+                <i className="fas fa-phone text-xl"></i>
+              </div>
+              <div>
+                <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">Call</div>
+                <div className="text-white font-medium hover:text-amber-500 transition-colors cursor-pointer">
+                  <a href={`tel:${CONTACT_CONFIG.phone}`}>{CONTACT_CONFIG.phone}</a>
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-6 group">
+              <div className="w-14 h-14 glass border border-white/10 flex items-center justify-center rounded-xl text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500 shadow-xl shadow-amber-500/5">
                 <i className="fas fa-map-marked-alt text-xl"></i>
               </div>
               <div>

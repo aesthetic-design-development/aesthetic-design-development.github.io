@@ -2,20 +2,20 @@
 import { Project, Service } from './types';
 
 export const CONTACT_CONFIG = {
-  name: 'Elite Civil',
+  name: 'Aesthetic Design & Development Consultant',
   fullName: 'MD Mishel Engineering',
   initial: 'M',
-  email: 'sting7even0@gmail.com', 
-  phone: '+1 (555) 829-4400',
-  location: 'Naddapara, Dhakshinkhan, Dhaka',
+  email: 'mishelm825@gmail.com', 
+  phone: '+8801708682650',
+  location: '352/2,Mollahbari,Naddapara, Dhakshinkhan, Dhaka-1230',
   linkedin: '#',
   instagram: '#',
   twitter: '#',
   github: '#',
   tools: [
-    { name: 'AutoCAD', level: 'Expert', icon: 'fa-pencil-ruler' },
-    { name: 'Revit / BIM', level: 'Expert', icon: 'fa-cube' },
-    { name: 'ETABS / SAP2000', level: 'Advanced', icon: 'fa-calculator' },
+    { name: 'AutoCAD/3D', level: 'Expert', icon: 'fa-pencil-ruler' },
+    { name: 'STAAD.Pro', level: 'Expert', icon: 'fa-cube' },
+    { name: 'ETABS', level: 'Advanced', icon: 'fa-calculator' },
     { name: 'Project Mgmt', level: 'Senior', icon: 'fa-tasks' }
   ]
 };

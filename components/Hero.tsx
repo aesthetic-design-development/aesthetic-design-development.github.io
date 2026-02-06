@@ -5,8 +5,19 @@ import { CONTACT_CONFIG } from '../constants';
 export const Hero: React.FC = () => {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-32 pb-20">
-      {/* Background Ambience */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      {/* Background Video & Ambience */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <video
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          src="/assets/videoplayback.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40"></div>
         <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[120px] animate-pulse"></div>
         <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[120px]"></div>
       </div>
@@ -22,9 +33,8 @@ export const Hero: React.FC = () => {
             <span className="italic font-normal">Excellence</span>.
           </h1>
           
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 mb-16 leading-relaxed font-light">
-            Crafting the backbone of modern civilization through <span className="text-white font-medium">precise structural analysis</span>, 
-            detailed floor planning, and innovative MEP systems integration.
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-amber-500 mb-16 leading-relaxed font-light">
+            Crafting the backbone of modern civilization through <span className="text-amber-500 font-medium">precise structural analysis</span>, detailed floor planning, and structural design using <span className="text-amber-500 font-medium">STAAD.Pro</span> and <span className="text-amber-500 font-medium">ETABS</span>.
           </p>
         </div>
 

@@ -38,8 +38,8 @@ export const Services: React.FC = () => {
             <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Projects Done</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-serif text-amber-500 mb-1">12</div>
-            <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Years Experience</div>
+              <div className="text-4xl font-serif text-amber-500 mb-1">5</div>
+              <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Years Experience</div>
           </div>
           <div className="text-center">
             <div className="text-4xl font-serif text-amber-500 mb-1">100%</div>
