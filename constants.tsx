@@ -1,6 +1,11 @@
 
 import { Project, Service } from './types';
 
+// Resolve asset URLs so Vite rewrites them correctly for production (GitHub Pages)
+const planImg = new URL('./assets/plan.jpg', import.meta.url).href;
+const electricalImg = new URL('./assets/electrical.jpg', import.meta.url).href;
+const elevationImg = new URL('./assets/elevation.jpg', import.meta.url).href;
+
 export const CONTACT_CONFIG = {
   name: 'Aesthetic Design & Development Consultant',
   fullName: 'MD Mishel Engineering',
@@ -26,7 +31,7 @@ export const PROJECTS: Project[] = [
     title: 'Multi-Residential Working Plan',
     category: 'Structural Engineering',
     description: 'High-precision 1st to 2nd-floor working plans executed at 1:100 scale. Features optimized spatial distribution for multi-family residential complexes with a focus on load-bearing masonry and structural symmetry.',
-    imageUrl: '/assets/plan.jpg', 
+    imageUrl: planImg, 
     details: ['Scale 1:100 Accuracy', 'Seismic Reinforcement', 'Spatial Optimization', 'BIM Integration']
   },
   {
@@ -34,7 +39,7 @@ export const PROJECTS: Project[] = [
     title: 'Advanced MEP Schematic Legend',
     category: 'Systems Engineering',
     description: 'A comprehensive electrical fixture and MEP system legend. Includes detailed symbology for power distribution, HVAC controls, and emergency lighting systems integrated into modern commercial architectures.',
-    imageUrl: '/assets/electrical.jpg', 
+    imageUrl: electricalImg, 
     details: ['Electrical Fixture Code', 'Load Balancing', 'HVAC Schematic', 'Global Safety Specs']
   },
   {
@@ -42,7 +47,7 @@ export const PROJECTS: Project[] = [
     title: 'Urban Residential Front Elevation',
     category: 'Architectural Engineering',
     description: 'Modern front elevation rendering at 1:100 scale. Focuses on facade material science, structural verticality, and aesthetic modernism for multi-story residential units.',
-    imageUrl: '/assets/elevation.jpg', 
+    imageUrl: elevationImg, 
     details: ['Facade Engineering', 'Material Palette', '1:100 Rendering', 'Vertical Load Calcs']
   }
 ];

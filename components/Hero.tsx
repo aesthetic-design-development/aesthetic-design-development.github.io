@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { CONTACT_CONFIG } from '../constants';
+const bgVideoUrl = new URL('../assets/videoplayback.mp4', import.meta.url).href;
 
 export const Hero: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ export const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover opacity-60"
-          src="/assets/videoplayback.mp4"
+          src={bgVideoUrl}
           autoPlay
           muted
           loop
