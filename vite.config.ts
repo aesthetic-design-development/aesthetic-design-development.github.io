@@ -6,7 +6,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/', 
+    // Use relative base for GitHub Pages (works for both user and project pages when deploying from /docs or root)
+    base: './', 
 
     server: {
       port: 3000,
@@ -14,6 +15,11 @@ export default defineConfig(({ mode }) => {
     },
 
     plugins: [react()],
+
+    build: {
+      // Output to docs for GitHub Pages "Deploy from branch" setup
+      outDir: 'docs',
+    },
 
     define: {
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
